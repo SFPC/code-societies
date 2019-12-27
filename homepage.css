@@ -1,0 +1,19 @@
+body {
+  background: black;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 3.5em;
+}
+
+a {
+  font-size: 2em;
+  border-bottom: 3px solid white;
+}
+
+a:hover {
+  color: mediumpurple;
+  border-color: mediumpurple;
+}
