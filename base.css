@@ -4,22 +4,27 @@
   font-weight: normal;
   font-style: normal;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 html {
   box-sizing: border-box;
 }
+
 body {
   background: blue;
   color: white;
   font-family: violet;
   padding: 20px;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 
 h1, h2, h3, h4, h5, p, ul, li, blockquote {
   margin: 0;
+}
+
+a:focus, button:focus {
+  outline: 0;
 }
 
 a {
