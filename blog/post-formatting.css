@@ -1,0 +1,59 @@
+img {
+  display: block;
+  margin: 1.5em auto 1.5em auto;
+  max-width: 820px;
+  width: 100%;
+}
+
+small {
+  display: block;
+  margin: 1.5em 0 1.5em 0;
+  margin-left: 2em;
+  font-size: .9675em;
+}
+
+p {
+  font-size: 1.325em;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  line-height: 1.5em;
+  max-width: 670px;
+  margin: 0 auto 1em auto;
+}
+
+h3 {
+  font-size: 4.75em;
+  margin: 0.5em 0;
+  max-width: 980px;
+}
+
+h4 {
+  font-size: 2.125em;
+  margin-bottom: 1.5em;
+  max-width: 980px;
+}
+
+h5 {
+  margin: 2em auto .5em auto;
+  font-size: 1.675em;
+  max-width: 670px;
+}
+
+ul, blockquote {
+  margin: 0 auto 1em auto;
+  max-width: 670px;
+}
+
+blockquote {
+  font-size: 3.5em;
+  margin: 1.5em auto 1.5em auto;
+}
+ul li {
+  font-size: 1.325em;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  line-height: 1.5em;
+  max-width: 670px;
+  margin: 0 auto 0.375em auto;
+}
+.holding-it-all-together {
+  width: 100%;
+}

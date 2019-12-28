@@ -10,6 +10,8 @@
 
 html {
   box-sizing: border-box;
+  width: 100%;
+  margin: 0;
 }
 
 body {
@@ -17,6 +19,9 @@ body {
   color: white;
   font-family: violet;
   padding: 20px;
+  width: 100%;
+  margin: 0;
+  word-break: break-word;
 }
 
 h1, h2, h3, h4, h5, p, ul, li, blockquote {
@@ -32,4 +37,22 @@ a {
   text-decoration: none;
   display: inline-block;
   border-bottom: 3px solid black;
+}
+
+a.image-link {
+  border-bottom: none;
+  position: relative;
+  display: block;
+}
+a.image-link span {
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  display: block;
+  font-size: 4em;
+}
+
+a.image-link:hover span {
+  opacity: 1;
 }
