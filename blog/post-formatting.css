@@ -47,6 +47,15 @@ blockquote {
   font-size: 3.5em;
   margin: 1.5em auto 1.5em auto;
 }
+
+blockquote p {
+  font-size: inherit;
+  margin: 0;
+  line-height: inherit;
+  max-width: inherit;
+  font-family: inherit;
+}
+
 ul li {
   font-size: 1.325em;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
@@ -57,4 +66,33 @@ ul li {
 
 .holding-it-all-together {
   width: 100%;
+}
+
+a.turn-image-into-link {
+  border-bottom: none;
+  position: relative;
+  display: block;
+}
+a.turn-image-into-link:after  {
+  content: ' \219D';
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  display: block;
+  font-size: 4em;
+}
+
+a.turn-image-into-link:hover:after {
+  opacity: 1;
+  color: hotpink;
+}
+
+pre {
+  background: black;
+  color: white;
+  max-width: 680px;
+  margin: 0 auto;
+  white-space: pre-wrap;
+  padding: 15px;
 }
