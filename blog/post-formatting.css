@@ -38,14 +38,15 @@ h5 {
   max-width: 670px;
 }
 
-ul, blockquote {
+ul, ol, blockquote {
   margin: 0 auto 1em auto;
   max-width: 670px;
 }
 
-blockquote {
-  font-size: 3.5em;
+p blockquote, ol li blockquote, ul li blockquote, blockquote {
+  font-size: 3.125em !important;
   margin: 1.5em auto 1.5em auto;
+  font-family: inherit;
 }
 
 blockquote p {
@@ -56,7 +57,8 @@ blockquote p {
   font-family: inherit;
 }
 
-ul li {
+ul li,
+ol li {
   font-size: 1.325em;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   line-height: 1.5em;
