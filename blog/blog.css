@@ -20,3 +20,7 @@ a:hover {
 h3 {
   margin-bottom: 0.5em;
 }
+
+.blog-index a {
+  font-size: 1.25em;
+}
