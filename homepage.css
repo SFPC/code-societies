@@ -5,15 +5,60 @@ body {
 
 h1 {
   margin-bottom: 18px;
-  font-size: 3.5em;
+  font-size: 4.5em;
 }
 
-a {
-  font-size: 2em;
+body.home {
+  background-color: blueviolet;
+}
+
+body.home a {
+  font-size: 1.325em;
   border-bottom: 3px solid white;
+  display: block;
+  margin-bottom: 12px;
 }
 
 a:hover {
-  color: mediumpurple;
+  color: black;
   border-color: mediumpurple;
+}
+
+body.home p {
+  font-size: 1.525em;
+  margin: 25px 0 65px 0;
+  max-width: 670px;
+}
+body.home h4 {
+  font-size: 3.525em;
+  margin: 25px 0;
+  max-width: 670px;
+}
+#orientation-blocks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.block {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 33.33%;
+  margin-bottom: 70px !important;
+  border: none !important;
+  font-size: 1.325em !important;
+}
+a.block {
+  cursor: pointer;
+  border: none !important;
+  font-size: 1em !important;
+  text-align: center;
+}
+.block img {
+  display: block;
+  margin: 0 auto 10px auto;
 }

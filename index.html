@@ -6,8 +6,78 @@
     <link rel="stylesheet" type="text/css" href="base.css">
     <link rel="stylesheet" type="text/css" href="homepage.css">
   </head>
-  <body>
+  <body class="home">
     <h1>Code Societies <br> Super Homepage</h1>
-    <a href="/code-societies/blog">Blog</a>
+    <a href="https://sfpc.io/codesocieties2020/">About SFPC</a>
+    <a href="/code-societies/blog">The Official Code Societies Blog !!!</a>
+
+    <p>School for Poetic Computation(SFPC)’s winter intensive is an introduction to re-introducing yourselves to computers. How do different platforms and processes—including algorithms, surveillance, social media, infrastructure, and interface—yield distinct modes of seeing, thinking, feeling, and reinforce existing systems of power? We will examine how code and societies shape and are shaped by each other by building new codes made of the the digital, the social, and the ritual, on a foundation of shared experience and a commitment to learning with care together. Code Societies is about redrawing the divisions that make us and unmake us. We’ll begin by challenging the division between those who code software and those who are coded by it.</p>
+
+    <h4>Guiding Resources:</h4>
+    <div id="orientation-blocks">
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      let orientation = [];
+      const orientationWrapper = document.getElementById("orientation-blocks");
+
+      const axiosArena = axios.create({
+        baseURL: "https://api.are.na/v2/",
+      });
+
+      axiosArena.defaults.headers.Authorization = 'Bearer ---' ;
+      axiosArena.get("channels/code-societies-winter-2020-guiding-resources").then(response => {
+        console.log(response);
+        if (response.data && response.data.contents.length > 1) {
+          createOrientation(response.data.contents);
+        }
+      });
+
+      function createOrientation(orientationData) {
+        for (let i=0; i<orientationData.length; i++) {
+          //create block
+          let block = document.createElement("div");
+          block.className = "block";
+
+          if (orientationData[i].source) {
+            block = document.createElement("a");
+            block.className = "block";
+            block.href = orientationData[i].source.url;
+            block.target = "_blank";
+          }
+
+
+
+          //create image
+          if (orientationData[i].image && orientationData[i].image) {
+            const image = document.createElement("img");
+            image.className = "image";
+            image.src = orientationData[i].image.square.url;
+            block.appendChild(image);
+          }
+          //create title
+          if (orientationData[i].title) {
+            const title = document.createElement("div");
+            title.className = "title";
+            title.innerHTML = orientationData[i].title;
+            block.appendChild(title);
+          }
+
+          //create text
+          if (orientationData[i].class === "Text") {
+            const text = document.createElement("div");
+            text.className = "text";
+            text.innerHTML = orientationData[i].content;
+            block.appendChild(text);
+          }
+
+
+
+
+          orientationWrapper.appendChild(block);
+        }
+      }
+    </script>
   </body>
 </html>
