@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../base.css">
+    <link rel="stylesheet" type="text/css" href="post-formatting.css">
+    <style>
+      /* To change the background color replace the word olive with another CSS color. */
+      body {background-color: olive;}
+      /* To change the color of the links when someone hover their mouse over it replace the word black with another CSS color. */
+      a:hover { color: black; }
+    </style>
+  </head>
+
+  <body>
+      <div class="holding-it-all-together">
+          <!-- This link should always be at the top. -->
+          <a href="/code-societies/blog">Blog Homepage</a>
+          <!-- The next three tags should be the H3 tag, the H4 tag, and an IMG tag. -->
+          <h3>Day 4: Building Nets for Floating Data</h3>
+          <h4>with Everest Pipkin</h4>
+
+          <p>
+            <a href="https://docs.google.com/document/d/1I1kM6lD8zPUvxakIujNj0HeUdmYFVAwnrt0s18BvMMQ/edit">SYLLABUS LINK</a>
+          </p>
+
+
+            <p><em>Building Nets for Floating Data is a one-session class on scraping information from websites, including text, images, and source code. We will talk about potential uses of large datasets, look at examples of artworks that use scraping as their informational backbone, and survey the ecosystem of online information gathering at large.</em></p>
+
+
+          <p>On Day 4 of Code Societies, we were joined by Everest Pipkin, a multimedia artist who works in software: games, bots, and beyond, as well as tactile physical mediums - for a conversation on the ethics of web scraping followed by a skillshare on how to get a scraper running on our local machines. Everest started this session by giving an overview of the three methodologies for getting data from the web as well as the advantages and shortcomings of each of them.</p>
+
+          <p>We started with the alternatives: Application Program Interfaces (APIs) and pre-compiled datasets. APIs are essentially user interfaces for our computers. They provide easier access points for code running on your machine to fetch data and perform operations based on the data that is returned from the access point. APIs can be incredibly useful because they often allow users to access hidden metrics and perform mass operations that aren’t possible in a GUI focused internet. Everest said that they avoid using APIs as much as possible because they are often corporate and like most corporate projects they likely have an agenda.</p>
+
+          <p>It is important to consider what kind of data these corporations want you, a developer, a technologist,  to have access to. Conversely, what might they be hiding or obscuring from their API? Is it free? If it is, then consider that you might be the product. Your usage of the API might be generating data that Major Corporation finds useful, profitable. Do you know where their data is sourced from? Is it ethical in whatever ways are most significant to you? Will your using their product make you an implicit supporter of their mission?</p>
+
+          <p><img src="https://sfpc.io/codesocieties-winter-19/assets/everest-pipkin.JPG" alt="Everest Pipkin on why artists should consider scraping"></p>
+
+          <p>The other alternative, precompiled datasets, which are often hosted on sites like Github or institutional datastores created for both academic and nonacademic research, share many of the same shortcomings as APIs. Precompiled datasets are commonly used to feed machine learning models and depending on the methodologies used to coalesce the data, emulate different sets of biases. Biased data creates biased machine learning models which magnify and reproduce problems that already exist.</p>
+
+          <p>Biased data and the products created from them have massive repercussions on our experiences of the everyday. It can influence voter turnout; it can be used to justify violence against communities that are already hyper-policed. Machine learning will not save us from our subjectivity. Furthermore, APIs and precompiled datasets rarely reflect space online spaces that do not have the personal resources or the technological skillsets to quantify and represent themselves in these ways. They do not reflect communities on the margins that do not have a representation on the internet.</p>
+
+          <p>We then moved on to talk more in-depth about web scraping. What is it and why would we want to use it? Web scraping is a code based methodology for pulling data off websites without having to go through official portals or access points. Web scraping gives us, independent researchers, technologists, artists,
+          the ability to bypass corporations and governmental agencies in our pursuit of data and information. We can be more careful, more tactical in where we choose to source from and who we seek to represent in our datasets. “Scraping is perfect for data that is ungathered, under-respected, or generally lacks the resources to be bundled into a set; data that is “floating.”</p>
+
+          <p>Web scraping also gives you the power to punch up, to bypass the walled gardens of <a href="https://www.nytimes.com/2017/03/06/science/donald-trump-data-rescue-science.html">government agencies</a> and big corporations that do not want to give you easy ways of accessing their data. We specifically talked about Sam Lavigne’s project from June of 2018 in which they scraped LinkedIn for the profiles of everyone who worked for ICE. Sam hosted the data on Github and wrote a Medium article about this project and within 24 hours both sites had removed his work under the guise that they do not promote Doxxing on their platforms. You can find an archived version of the article <a href="https://archive.fo/0aYO3">here</a> and an archived version of the CSV <a href="https://archive.fo/VhOLb">here</a>.</p>
+
+          <p><img src="https://sfpc.io/codesocieties-winter-19/assets/everest-pipkin-2.JPG" alt="Everest Pipkin on navigating consent"></p>
+
+          <p>Despite its advantages, web scraping is far from a perfect technology. In sourcing from the internet, the data collected will be biased - it will have bias regardless of how or where it is sourced from, but we can be selective in avoiding the most horrible and violent corners of the internet. Web scraping is also a onetime operation - the only way to get dated information is to scrape again and again. Scraped data is usually not as clean as data coming from APIs or precompiled sets and it might take some additional massaging with python and learning of <a href="https://regexr.com/">Reg-Ex</a> before the data is usable.</p>
+
+          <p>These are a few of the disadvantages of exclusively sourcing through web scrapping, but the most central concern arises when considering the question of how we hold conversations about consent when scraping from the web? Everest said their current solution for this issue is to use Creative Commons no-attribution work whenever possible, but to attribute liberally anyway, and to always be ready to pull something off if someone asks, but there is no One Right Answer.</p>
+
+          <p>Everest went on to show us examples of work made by:</p>
+
+          <p><strong><em>web scraping</em></strong></p>
+          <ul>
+            <li><a href="http://www.plummerfernandez.com/Shiv-Integer">Shiv Integer</a> – 3d model Thingiverse bot, M Plummer-Fernandez and Julien Deswaef</li>
+            <li><a href="https://github.com/thricedotted/theseeker">The Seeker</a> – A generated poetry book from WikiHow by Li Zi</li>
+            <li><a href="http://www.penelopeumbrico.net/index.php/project/suns/">Suns from Sunsets from Flickr</a> &amp; <a href="http://www.penelopeumbrico.net/index.php/project/flickr-moons/">Everyone’s Photos Any License</a> – Flickr collections from Penelope Umbrico</li>
+          </ul>
+
+          <p><strong><em>coalescing data by hand</em></strong></p>
+          <ul>
+            <li><a href="http://annaridler.com/mosaic-virus/">Mosaic Virus</a> – Machine-learning generated Tulips by Anna Ridler</li>
+            <li><a href="http://www.pippinbarr.com/2017/03/29/v-r-3/">VR 3</a> – A museum of all the water on the Unity Store by Pippin Barr</li>
+          </ul>
+
+          <p><img src="https://sfpc.io/codesocieties-winter-19/assets/everest-pipkin-3.JPG" alt="Everest Pipkin showing artwork they made with old cursors"></p>
+
+          <p><img src="https://sfpc.io/codesocieties-winter-19/assets/everest-pipkin-4.JPG" alt="Everest Pipkin showing an application they recently made"></p>
+
+          <h2 id="build-yourself-a-web-scraper">Build Yourself a Web Scraper<a class="anchorjs-link " href="#build-yourself-a-web-scraper" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+          <p><strong>These instructions are specific to macOS,</strong> but should also work on most UNIX/LINUX machines.</p>
+
+          <p>If you’re new to programming, consider going through our <a href="http://sfpc.io/codesocieties-winter-19/2019/01/08/computational-methods-of-code-societies.html">day 2 blog post, Computational Methods of Code Societies,</a> before beginning for an overview of terminal and command line basics. Our final product will be a python file that outputs the contents of <code class="language-plaintext highlighter-rouge">http://ppg.thebrownhouse.org/</code>, a hobbyist’s power paragliding website with an easily traversible table structure.</p>
+
+          <p>Before we begin you will need to handle a few installations.</p>
+
+          <ul>
+            <li><code class="language-plaintext highlighter-rouge">pip</code>, the offical python package manager</li>
+            <li><code class="language-plaintext highlighter-rouge">python3</code>, the lastest version of python</li>
+            <li><code class="language-plaintext highlighter-rouge">BeautifulSoup4</code>, a web-scraping library</li>
+            <li><code class="language-plaintext highlighter-rouge">requests</code>, a library for making HTTP requests</li>
+          </ul>
+
+          <p>Follow these instructions to <a href="https://wsvincent.com/install-python3-mac/">install python3</a>. After installing python3, check if pip is installed by running <code class="language-plaintext highlighter-rouge">pip --version</code> in your terminal. If you see anything that’s not an error messgae, you’re good to skip the <code class="language-plaintext highlighter-rouge">sudo easy_install pip</code> step.</p>
+
+          <p>Now, run these commands in your terminal to install pip, BeautifulSoup, and requests before moving on.</p>
+
+          <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># you will need admin privledges to your machine
+          </span><span class="n">sudo</span> <span class="n">easy_install</span> <span class="n">pip</span>
+          <span class="n">pip</span> <span class="n">install</span> <span class="n">BeautifulSoup4</span>
+          <span class="n">pip</span> <span class="n">install</span> <span class="n">requests</span>
+          </code></pre></div></div>
+
+          <p>Create a file in your directory of choice called <code class="language-plaintext highlighter-rouge">scraper.py</code>, and in it copy and paste the code below. This code will send an <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods">HTTP GET</a> request to <code class="language-plaintext highlighter-rouge">http://ppg.thebrownhouse.org/</code>, use the BeautifulSoup library to parse through the site, and then print the page contents to your terminal.</p>
+
+          <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># import the required python libraries into our file
+          </span><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span><span class="p">,</span> <span class="n">SoupStrainer</span>
+          <span class="kn">import</span> <span class="nn">requests</span>
+
+          <span class="c1"># send GET request
+          </span><span class="n">page</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"http://ppg.thebrownhouse.org/"</span><span class="p">)</span>
+
+          <span class="c1"># this function returns the page content and stores it in
+          # a variable called soup
+          </span><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
+
+          <span class="c1"># print our soup to the console
+          </span><span class="k">print</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">prettify</span><span class="p">())</span>
+          </code></pre></div></div>
+
+          <p>Run your web scraper by typing <code class="language-plaintext highlighter-rouge">python3 scraper.py</code> into your terminal. Make sure that you do this in the same directory that the file is in.</p>
+
+          <p>Congratulations! You now have a web scrapper running on your local machine. Checkout <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup’s</a> documentation for more ways to use the library.</p>
+
+
+            <small>written by Mimi Doan</small>
+
+
+
+      </div>
+  </body>
+</html>
