@@ -67,14 +67,28 @@ ol li {
 }
 
 .holding-it-all-together {
+  position: relative;
   width: 100%;
+
+}
+.holding-it-all-together.meet-the-students img {
+  width: 40%;
+}
+.holding-it-all-together.meet-the-students p {
+  margin-bottom: 120px;
 }
 
+a.home-button {
+  position: sticky;
+  top: 20px;
+  border: none !important;
+}
 a.turn-image-into-link {
   border-bottom: none;
   position: relative;
   display: block;
 }
+
 a.turn-image-into-link:after  {
   content: ' \219D';
   opacity: 0;
