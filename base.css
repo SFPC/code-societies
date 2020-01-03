@@ -37,4 +37,8 @@ a {
   text-decoration: none;
   display: inline-block;
   border-bottom: 3px solid black;
+  line-height: 1em;
+}
+a.bold {
+  font-weight: bold;
 }
