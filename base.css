@@ -48,6 +48,10 @@ a.inline  {
   color: inherit;
   text-decoration: none;
   display: inline-block !important;
-  font-size: 1em !important;
   margin-bottom: 0 !important;
+}
+
+a.fullwidth  {
+  display: block !important;
+  font-size: 1.525em;
 }
