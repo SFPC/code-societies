@@ -49,4 +49,5 @@ a.inline  {
   text-decoration: none;
   display: inline-block !important;
   font-size: 1em !important;
+  margin-bottom: 0 !important;
 }
