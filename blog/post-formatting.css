@@ -69,10 +69,9 @@ ol li {
 .holding-it-all-together {
   position: relative;
   width: 100%;
-
 }
 .holding-it-all-together.meet-the-students img {
-  width: 40%;
+  width: 100%;
 }
 .holding-it-all-together.meet-the-students p {
   margin-bottom: 120px;
@@ -111,4 +110,11 @@ pre {
   margin: 0 auto;
   white-space: pre-wrap;
   padding: 15px;
+}
+
+/* DESKTOP ONLY STYLES!! */
+@media only screen and (min-width: 768px) {
+  .holding-it-all-together.meet-the-students img {
+    width: 40%;
+  }
 }
