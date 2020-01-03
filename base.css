@@ -39,6 +39,14 @@ a {
   border-bottom: 3px solid black;
   line-height: 1em;
 }
+
 a.bold {
   font-weight: bold;
+}
+
+a.inline  {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block !important;
+  font-size: 1em !important;
 }
