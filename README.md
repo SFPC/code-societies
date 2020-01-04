@@ -21,6 +21,7 @@ If you would like to contribute to this repository:
 - `$ git remote add upstream https://github.com/SFPC/code-societies.git.git`
 - Check that you have added upstream correctly with `$ git remote -v`
 - The terminal should print something like this:
+
         origin	git@github.com:yourusername/code-societies.git (fetch)
         origin	git@github.com:yourusername/code-societies.git (push)
         upstream	https://github.com/SFPC/code-societies.git (fetch)
