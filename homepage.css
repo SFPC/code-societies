@@ -40,6 +40,7 @@ body.home h4 {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 .loading {
@@ -54,7 +55,7 @@ body.home h4 {
   align-items: stretch;
   justify-content: center;
   flex-direction: column;
-  width: 32%;
+  width: 100%;
   margin-bottom: 70px !important;
   border: none !important;
   font-size: 1.325em !important;
@@ -74,4 +75,16 @@ a.channel {
 .block img {
   display: block;
   margin: 0 auto 10px auto;
+}
+
+
+/* DESKTOP ONLY STYLES!! */
+@media only screen and (min-width: 768px) {
+  #orientation-blocks {
+    flex-direction: row;
+  }
+  .block,
+  .channel {
+    width: 32%;
+  }
 }
