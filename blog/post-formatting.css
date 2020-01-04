@@ -65,7 +65,12 @@ ol li {
   max-width: 670px;
   margin: 0 auto 0.375em auto;
 }
-
+p a {
+  border: none;
+  line-height: inherit;
+  text-decoration: underline;
+  display: inline;
+}
 .holding-it-all-together {
   position: relative;
   width: 100%;
