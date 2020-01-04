@@ -70,6 +70,13 @@ ol li {
   position: relative;
   width: 100%;
 }
+.holding-it-all-together.meet-the-students h2 {
+  text-align: center;
+  text-transform: lowercase;
+  letter-spacing: .02em;
+  font-size: 3em;
+  color: #580081;
+}
 .holding-it-all-together.meet-the-students img {
   width: 100%;
 }
