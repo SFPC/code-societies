@@ -1,7 +1,7 @@
 # code-societies
 This is the super repository for all code societies sessions. Readme is currently a work in progress!
 
-This website is hand-coded. There are no extra libraries or build processes. All pages are written with HTML and CSS and sometimes Javascript. There is one library that this website is relying on: a javascript library called Axios. With Axios this website can request data from are.na, a research platform which code societies students and teachers use to collaboratively add and share content throughout the session.
+This website is hand-coded. There are no large libraries, frameworks or build processes. All pages are written with HTML and CSS and sometimes Javascript. There is one library that this website is relying on: a javascript library called Axios. With Axios this website can request data from are.na, a research platform which code societies students and teachers use to collaboratively add and share content throughout the session.
 
 ### preparation for contributing
 - a personal GitHub account
