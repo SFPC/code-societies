@@ -38,27 +38,38 @@ body.home h4 {
 }
 #orientation-blocks {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
-
-.block {
-  display: flex;
+.loading {
+  font-size: 3em;
+  letter-spacing: .09em;
+  color: chartreuse;
+}
+.block,
+.channel {
+  display: flex !important;
   padding: 15px;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-direction: column;
-  width: 33.33%;
+  width: 32%;
   margin-bottom: 70px !important;
   border: none !important;
   font-size: 1.325em !important;
 }
-a.block {
+a.block,
+a.channel {
   cursor: pointer;
   border: none !important;
   font-size: 1em !important;
   text-align: center;
+}
+a.channel {
+  border: 2px solid white !important;
+  font-size: 2em !important;
+  min-height: 300px;
 }
 .block img {
   display: block;

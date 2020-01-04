@@ -40,11 +40,19 @@
         baseURL: "https://api.are.na/v2/",
       });
 
+      let loading = document.createElement("div");
+      loading.className = "loading";
+      loading.innerHTML = 'loading...';
+      orientationWrapper.appendChild(loading);
+
       axiosArena.defaults.headers.Authorization = 'Bearer ---' ;
-      axiosArena.get("channels/code-societies-winter-2020-guiding-resources").then(response => {
+      axiosArena.get("channels/code-societies-winter-2020-guiding-resources?per=100").then(response => {
         console.log(response);
         if (response.data && response.data.contents.length > 1) {
+          orientationWrapper.removeChild(loading);
           createOrientation(response.data.contents);
+        } else {
+
         }
       });
 
@@ -61,7 +69,12 @@
             block.target = "_blank";
           }
 
-
+          if (orientationData[i].class === "Channel") {
+            block = document.createElement("a");
+            block.className = "channel";
+            block.href = `https://are.na/${orientationData[i].user.slug}/${orientationData[i].slug}`;
+            block.target = "_blank";
+          }
 
           //create image
           if (orientationData[i].image && orientationData[i].image) {
@@ -85,9 +98,6 @@
             text.innerHTML = orientationData[i].content;
             block.appendChild(text);
           }
-
-
-
 
           orientationWrapper.appendChild(block);
         }
