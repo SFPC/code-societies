@@ -13,8 +13,8 @@ a {
 }
 
 a:hover {
-  color: black;
-  border-color: black;
+  color: hotpink !important;
+  border-color: hotpink !important;
 }
 
 h3 {
