@@ -28,7 +28,6 @@ If you would like to contribute to this repository:
 
 ##### contribution workflow, make sure to follow these steps BEFORE you add files or change code!
 - `$ cd code-societies`
-- Ensure you are on the master branch `$ git checkout master`
 - Fetch from upstream remote with `$ git fetch upstream `
 - Checkout master branch and merge the code from the SFPC repo into yours with `$ git checkout master` and then `$ git merge upstream/master`
 - Now create a new branch `$ git branch whatever-you-want-to-name-your-branch`
