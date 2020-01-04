@@ -118,12 +118,16 @@ a.turn-image-into-link:hover:after {
 pre {
   background: black;
   color: white;
-  max-width: 680px;
+  max-width: 900px;
   margin: 0 auto;
   white-space: pre-wrap;
   padding: 15px;
-}
+  width: 100%;
 
+}
+pre code {
+font-size: 1.35em;
+}
 /* DESKTOP ONLY STYLES!! */
 @media only screen and (min-width: 768px) {
   .holding-it-all-together.meet-the-students img {
