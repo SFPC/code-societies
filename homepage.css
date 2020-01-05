@@ -29,6 +29,8 @@ body.home p {
   margin: 25px 0 65px 0;
   max-width: 670px;
   line-height: 1.45em;
+  position: relative;
+  z-index: 10;
 }
 
 body.home h4 {
@@ -78,6 +80,29 @@ a.channel {
 }
 
 
+.knot {
+  position: fixed;
+  width: 100%;
+  display: block;
+  max-width: 15%;
+}
+.knot.one {
+  top: 5%;
+  right: 5%;
+}
+
+.knot.two {
+  top: 35%;
+  left: -10%;
+  max-width: 20%;
+}
+
+.knot.three {
+  bottom: 3%;
+  right: -2%;
+  max-width: 17%;
+}
+
 /* DESKTOP ONLY STYLES!! */
 @media only screen and (min-width: 768px) {
   #orientation-blocks {
@@ -86,5 +111,12 @@ a.channel {
   .block,
   .channel {
     width: 32%;
+  }
+  .knot.two {
+    left: auto;
+    right: 18%;
+  }
+  .knot.three {
+    bottom: -8%;
   }
 }

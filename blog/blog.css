@@ -26,3 +26,10 @@ h3 {
   font-size: 1.25em;
   margin-bottom: 12px;
 }
+
+.plotter-drawing {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 60%;
+}
