@@ -17,8 +17,7 @@ If you would like to contribute to this repository:
 ##### setting up Terminal for contribution
 - clone your forked repository with `$ git clone url-of-repo`
 - `$ cd code-societies`
-- Make sure you always have the latest code from the original SFPC code-societies repository with these steps:
-- `$ git remote add upstream https://github.com/SFPC/code-societies.git.git`
+- `$ git remote add upstream https://github.com/SFPC/code-societies.git`
 - Check that you have added upstream correctly with `$ git remote -v`
 - The terminal should print something like this:
 
