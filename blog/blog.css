@@ -30,6 +30,14 @@ h3 {
 .plotter-drawing {
   display: block;
   width: 100%;
-  margin: 0 auto;
-  max-width: 60%;
+  margin: -40px auto 0 auto;
+
+}
+
+/* DESKTOP ONLY STYLES!! */
+@media only screen and (min-width: 768px) {
+  .plotter-drawing {
+    max-width: 60%;
+    margin: -80px auto 0 auto;
+  }
 }
