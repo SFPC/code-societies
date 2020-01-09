@@ -21,7 +21,7 @@ p {
 }
 
 h3 {
-  font-size: 4.75em;
+  font-size: 3.45em;
   margin: 0.5em 0;
   max-width: 980px;
 }
@@ -132,5 +132,8 @@ font-size: 1.35em;
 @media only screen and (min-width: 768px) {
   .holding-it-all-together.meet-the-students img {
     width: 40%;
+  }
+  h3 {
+    font-size: 4.75em;
   }
 }
