@@ -123,10 +123,25 @@ pre {
   white-space: pre-wrap;
   padding: 15px;
   width: 100%;
-
+  font-family:
+}
+pre.special-formatting {
+  background: transparent;
+  color: inherit;
+  max-width: none;
+  margin: 0;
+  white-space: pre-wrap;
+  padding: 0;
+  width: 100%;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.325em;
+  line-height: 1.5em;
+}
+pre.special-formatting.push-left {
+  padding-left: 40% !important;
 }
 pre code {
-font-size: 1.35em;
+  font-size: 1.35em;
 }
 /* DESKTOP ONLY STYLES!! */
 @media only screen and (min-width: 768px) {
@@ -135,5 +150,13 @@ font-size: 1.35em;
   }
   h3 {
     font-size: 4.75em;
+  }
+
+  .two-images {
+    display: flex;
+    align-items: center;
+  }
+  .two-images img {
+    width: 45%;
   }
 }
