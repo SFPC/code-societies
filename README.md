@@ -8,6 +8,16 @@ This website is hand-coded. There are no large libraries, frameworks or build pr
 - working knowledge of HTML (code societies organizers are here to guide you!)
 - working knowledge of Terminal (optional!)
 
+### if you are using git and github for the first time:
+- Create a personal GitHub account
+- Check if you already have git installed by running this in your terminal `$ git --version`
+- If the terminal doesn't not return a response like `git version 2.20.01 ...` then you'll need to follow this [link](https://sourceforge.net/projects/git-osx-installer/files) to download and install it. If you are on a Windows computer follow this [link](https://git-scm.com/download/win)
+- If it installed properly you should see the current git version when you run this command again in your terminal `$ git --version`
+- Now lets connect the git software to your personal GitHub account
+- git config --global user.name "Your Name"
+- git config --global user.email "emailyouused@foryourgithubaccount.com"
+- Now you will be able to use git prompts in your terminal like `git init` and `git clone`
+
 ### how to contribute
 If you would like to contribute to this repository:
 - you should currently be logged into your github account
@@ -15,7 +25,7 @@ If you would like to contribute to this repository:
 - this will create a copy of this repository under your account, you should be automatically taken this new page on your account
 
 ##### setting up Terminal for contribution
-- clone your forked repository with `$ git clone url-of-repo`
+- clone your forked repository with `$ git clone https-url-of-github-repository`
 - `$ cd code-societies`
 - `$ git remote add upstream https://github.com/SFPC/code-societies.git`
 - Check that you have added upstream correctly with `$ git remote -v`
