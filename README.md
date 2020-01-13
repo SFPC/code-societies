@@ -38,8 +38,10 @@ If you would like to contribute to this repository:
 
 ##### contribution workflow, make sure to follow these steps BEFORE you add files or change code!
 - `$ cd code-societies`
-- Fetch from upstream remote with `$ git fetch upstream `
-- Checkout master branch and merge the code from the SFPC repo into yours with `$ git checkout master` and then `$ git merge upstream/master`
+- Follow the next three steps every time you want to make a new contribution to the blog!
+- 1. Fetch from upstream remote with `$ git fetch upstream `
+- 2. Checkout master branch and merge the code from the SFPC repo into yours with `$ git checkout master`
+- 3. Then `$ git merge upstream/master`
 - Now create a new branch `$ git branch whatever-you-want-to-name-your-branch`
 - Switch over to your new branch `$ git checkout whatever-you-named-your-branch`
 - Now you can open the code-societies repo in your preferred code editor and create your new post! This will probably look something like duplicating the blog post base HTML file, adding your writing, ensuring HTML tags are added etc etc. More details on post formatting are [here](http://sfpc.io/code-societies/blog/post-template-guide.html)
