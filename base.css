@@ -59,3 +59,37 @@ a.fullwidth  {
 .purple {
   color: rgb(181, 0, 255) !important;
 }
+
+body.home.syllabi h5 {
+  font-size: 1.75em;
+  margin-bottom: 6px;
+  margin-top: 62px;
+}
+body.home.syllabi h6 {
+  font-size: 1.25em;
+  margin-bottom: 6px;
+  margin-top: 62px;
+}
+body.home.syllabi p {
+  margin-bottom: 18px;
+  line-height: 1.75em;
+}
+
+body.home.syllabi ul:last-of-type {
+  margin-bottom: 62px;
+}
+
+body.home.syllabi ul li {
+  margin-bottom: 12px;
+  display: block;
+  line-height: 1.25em;
+  max-width: 680px;
+}
+
+body.home.syllabi ul li a {
+  display: block;
+}
+body.home.syllabi a:hover {
+  color: tomato;
+  border-color: tomato;
+}
