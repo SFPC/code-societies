@@ -144,7 +144,7 @@ pre.special-formatting {
   line-height: 1.5em;
 }
 pre.special-formatting.push-left {
-  padding-left: 40% !important;
+  padding-left: 25% !important;
 }
 pre code {
   font-size: 1.35em;
