@@ -55,3 +55,7 @@ a.fullwidth  {
   display: block !important;
   font-size: 1.525em;
 }
+
+.purple {
+  color: rgb(181, 0, 255) !important;
+}
