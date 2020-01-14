@@ -149,6 +149,35 @@ pre.special-formatting.push-left {
 pre code {
   font-size: 1.35em;
 }
+
+#resources {
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vh - 20px);
+  border-bottom: 10px solid mediumpurple;
+  overflow: scroll;
+}
+#resources .block,
+#resources .channel {
+  width: 20%;
+  padding: 20px;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a.block,
+a.channel {
+  cursor: pointer;
+  border: none !important;
+  font-size: 1em !important;
+  text-align: center;
+}
+a.channel {
+  border: 2px solid white !important;
+  font-size: 1.5em !important;
+  min-height: 100px;
+}
 /* DESKTOP ONLY STYLES!! */
 @media only screen and (min-width: 768px) {
   .holding-it-all-together.meet-the-students img {
