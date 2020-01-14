@@ -59,7 +59,10 @@ a.fullwidth  {
 .purple {
   color: rgb(181, 0, 255) !important;
 }
-
+body.home.syllabi {
+  background: #663399;
+  color: white !important;
+}
 body.home.syllabi h5 {
   font-size: 1.75em;
   margin-bottom: 6px;
