@@ -79,6 +79,7 @@ p a {
 }
 .holding-it-all-together {
   position: relative;
+  padding-top: 30px;
   width: 100%;
 }
 .holding-it-all-together.meet-the-students h2 {
@@ -195,4 +196,61 @@ a.channel {
   .two-images img {
     width: 45%;
   }
+}
+
+#arena-drawer-button {
+  font-size: 1.125em;
+  text-transform: uppercase;
+  font-family: monospace;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  background: black;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  right: 0;
+}
+
+#arena-drawer {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+#arena-drawer.open {
+  display: flex;
+}
+
+#arena-drawer-button #close {
+  display: none;
+}
+#arena-drawer-button.open #close {
+  display: block;
+}
+#arena-drawer-button.open #open {
+  display: none;
+}
+
+#link-to-arena-channel {
+  margin-bottom: 20px;
+}
+
+#arena-drawer .block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: 5px solid black !important;
+}
+
+#arena-drawer .block img {
+  max-height: 30px;
+  width: auto;
+  margin: 0 10px 0 0;
 }
