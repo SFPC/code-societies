@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="post-formatting.css">
     <style>
       /* To change the background color replace the word olive with another CSS color. */
-      body {background-color: olive;}
+      body {background-color: cornflowerblue;}
       /* To change the color of the links when someone hover their mouse over it replace the word black with another CSS color. */
       a:hover { color: black; }
     </style>
@@ -24,14 +24,94 @@
 
   <body>
       <div class="holding-it-all-together">
+          <div id="arena-drawer-button">our collaborative resources</div>
+          <div id="arena-drawer"></div>
           <!-- This link should always be at the top. -->
           <a class="home-button" href="/code-societies/blog">&#8604; blog</a>
           <!-- The next three tags should be the H3 tag, the H4 tag, and an IMG tag. -->
-          <h3>POST TITLE</h3>
-          <h4>POST SUBTITLE</h4>
+          <h3>Radical Hardware</h3>
+          <h4>with Taeyoon Choi</h4>
           <p></p>
           <img src="images/" alt="">
           <!-- Copy & Paste your writing below this line. Add proper tags around text and images. Ask Emma questions on formatting if you have them! -->
       </div>
   </body>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script>
+    const arenaDrawer = document.getElementById("arena-drawer");
+    const arenaDrawerButton = document.getElementById("arena-drawer-button");
+    const axiosArena = axios.create({
+      baseURL: "https://api.are.na/v2/",
+    });
+
+    arenaDrawerButton.addEventListener('click', arenaDrawerOpen);
+
+    function arenaDrawerOpen() {
+      arenaDrawer.classList.toggle('open');
+    }
+
+    let loading = document.createElement("div");
+    loading.className = "loading";
+    loading.innerHTML = 'loading...';
+    arenaDrawer.appendChild(loading);
+
+    axiosArena.defaults.headers.Authorization = 'Bearer ---' ;
+    axiosArena.get("channels/radical-hardware-transistors-to-cpu-taeyoon-choi?per=100").then(response => {
+      console.log(response);
+      if (response.data && response.data.contents.length > 1) {
+        arenaDrawer.removeChild(loading);
+        createDrawer(response.data.contents);
+      } else {
+
+      }
+    });
+
+    function createDrawer(drawerData) {
+      for (let i=0; i<drawerData.length; i++) {
+        //create block
+        let block = document.createElement("div");
+        block.className = "block";
+
+        if (drawerData[i].source) {
+          block = document.createElement("a");
+          block.className = "block";
+          block.href = drawerData[i].source.url;
+          block.target = "_blank";
+        }
+
+        if (drawerData[i].class === "Channel") {
+          block = document.createElement("a");
+          block.className = "channel";
+          block.href = `https://are.na/${drawerData[i].user.slug}/${drawerData[i].slug}`;
+          block.target = "_blank";
+        }
+
+        //create image
+        if (drawerData[i].image && drawerData[i].image) {
+          const image = document.createElement("img");
+          image.className = "image";
+          image.src = drawerData[i].image.square.url;
+          block.appendChild(image);
+        }
+        //create title
+        if (drawerData[i].title) {
+          const title = document.createElement("div");
+          title.className = "title";
+          title.innerHTML = drawerData[i].title;
+          block.appendChild(title);
+        }
+
+        //create text
+        if (drawerData[i].class === "Text") {
+          const text = document.createElement("div");
+          text.className = "text";
+          text.innerHTML = drawerData[i].content;
+          block.appendChild(text);
+        }
+
+        arenaDrawer.appendChild(block);
+      }
+    }
+  </script>
 </html>
