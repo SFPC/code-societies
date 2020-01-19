@@ -102,6 +102,7 @@
         arenaDrawerButton.addEventListener('click', arenaDrawerOpen);
 
         function arenaDrawerOpen() {
+          window.scrollTo(0, 0);
           arenaDrawer.classList.toggle('open');
           arenaDrawerButton.classList.toggle('open');
         }
