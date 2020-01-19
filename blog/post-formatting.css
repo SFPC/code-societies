@@ -98,7 +98,7 @@ p a {
 
 a.home-button {
   position: sticky;
-  top: 20px;
+  top: 65px;
   border: none !important;
 }
 
@@ -180,26 +180,9 @@ a.channel {
   font-size: 1.5em !important;
   min-height: 100px;
 }
-/* DESKTOP ONLY STYLES!! */
-@media only screen and (min-width: 768px) {
-  .holding-it-all-together.meet-the-students img {
-    width: 40%;
-  }
-  h3 {
-    font-size: 4.75em;
-  }
-
-  .two-images {
-    display: flex;
-    align-items: center;
-  }
-  .two-images img {
-    width: 45%;
-  }
-}
 
 #arena-drawer-button {
-  font-size: 1.125em;
+  font-size: 0.8675em;
   text-transform: uppercase;
   font-family: monospace;
   text-align: center;
@@ -253,4 +236,25 @@ a.channel {
   max-height: 30px;
   width: auto;
   margin: 0 10px 0 0;
+}
+
+/* DESKTOP ONLY STYLES!! */
+@media only screen and (min-width: 768px) {
+  .holding-it-all-together.meet-the-students img {
+    width: 40%;
+  }
+  #arena-drawer-button {
+    font-size: 0.8675em;
+  }
+  h3 {
+    font-size: 4.75em;
+  }
+
+  .two-images {
+    display: flex;
+    align-items: center;
+  }
+  .two-images img {
+    width: 45%;
+  }
 }
