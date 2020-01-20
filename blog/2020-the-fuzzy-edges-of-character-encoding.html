@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@sfpc" />
+    <meta name="twitter:creator" content="@sfpc" />
+    <!-- Fill out meta tags below for Twitter -->
+    <meta property="og:url" content="https://sfpc.io/code-societies-website/blog/2020-the-fuzzy-edges-of-character-encoding.html" />
+    <meta property="og:title" content="Code Societies 2020 Blog" />
+    <meta property="og:description" content="The Fuzzy Edges of Character Encoding written by Cy X" />
+    <meta property="og:image" content="https://sfpc.io/code-societies/blog/images/2020-the-fuzzy-edges-of-character-encoding/1.png" />
+    <meta property="twitter:image:alt" content="Everest Pipkin at the front of class at SFPC with various shades of the closed fist emojis projected on screen." />
+    <link rel="stylesheet" type="text/css" href="../base.css">
+    <link rel="stylesheet" type="text/css" href="post-formatting.css">
+    <style>
+      /* To change the background color replace the word olive with another CSS color. */
+      body {background-color: darkgoldenrod;}
+      /* To change the color of the links when someone hover their mouse over it replace the word black with another CSS color. */
+      a:hover { color: red; }
+    </style>
+  </head>
+
+  <body>
+      <div class="holding-it-all-together">
+        <div id="arena-drawer-button">
+          <span id="open">Are.na / Code Societies / The Fuzzy Edges of Character Encoding</span>
+          <span id="close">x</span>
+        </div>
+        <div id="arena-drawer">
+          <a class="link-to-arena-channel" href="https://www.are.na/code-societies/the-fuzzy-edges-of-character-encoding-everest-pipkin" target="_blank">Are.na / Code Societies / The Fuzzy Edges of Character Encoding</a>
+        </div>
+          <!-- This link should always be at the top. -->
+          <a class="home-button" href="/code-societies/blog">&#8604; blog</a>
+          <!-- The next three tags should be the H3 tag, the H4 tag, and an IMG tag. -->
+          <h3>Day 5: The Fuzzy Edges of Character Encoding</h3>
+          <h4>taught by Everest Pipkin</h4>
+          <a href="https://everestpipkin.github.io/character-encoding-sfpc" class="syllabus" target="blank">Syllabus</a>
+          <img src="images/2020-the-fuzzy-edges-of-character-encoding/1.png" alt="Everest Pipkin at the front of class at SFPC with various shades of the closed fist emojis projected on screen.">
+
+          <p>
+          Day 5 of Code Societies was an evening full of the history, politics, and computational basics of text-based character encoding taught by Everest Pipkin.
+          </p>
+          <p>
+          In previous technology-based classes and workshops I have attended, people have neglected to talk about character encoding. In coding classes, I was told to just make sure to never forget to include <code>&lt;meta charset=”UTF-8”&gt;</code> No one has ever explained why until this class.
+          </p>
+          <p>
+          How does something that it is so relevant to the inner workings of computers and the ways in which we communicate with each other all around the world get glossed over or worse not even mentioned?
+          </p>
+          <h5>My fave bits of history shared by Everest:</h5>
+          <p>
+          Computers were human for a long time.
+        </p>
+        <p>
+          Computers weren’t always dominated by men! Early computers performed calculations and mostly women were contracted to do that computational work.
+        </p>
+        <p>
+          The term “computer bug” literally came from earlier days when bugs would get stuck in the machines.
+        </p>
+        <p>
+          The first message sent on the telegraph in morse code was “what hath god wrought.”
+        </p>
+        <p>
+          The census used to take about seven years total to process and was done via Jacquard loom punch cards, which is pretty wild considering the census helps determine the number of seats your state occupies in the U.S. House of Representative and federal funding for infrastructure and public services. Imagine how delayed they were then getting people the things they needed.
+        </p>
+        <p>
+          Now for one of the most important things to note - everything on our computers has a set of numbers associated with it! These words you are reading on the screens are all connected to numbers! Even the photos in this blog are connected to numbers.
+        </p>
+        <p>
+          Everest then went over types of encoding languages that were created as communication forms, things such as drum languages, smoke signals, tap codes, and morse code. But once computers and people around the world needed to communicate more with each other, there was a push to make things more standardized - otherwise, all our messages would be encoded in a way that might make them hard to or impossible to understand if sent to a computer that had a different language system.
+        </p>
+
+        <h5>UTF-8</h5>
+        <p>
+        In 1868, ASCII, a system of 128 characters was created, but that was not enough to represent different languages, so this system was expanded during the Unicode Consortium who created UTF-8!
+      </p>
+      <p>
+        With the standardization of languages being a goal, there are many questions on the effects of digitization? Our class brought up questions of what it means to, for instance, digitize indigenous languages. I am curious about who gets to make the decisions around digitization and who gets to proclaim the supposed benefits to doing so. Also, in what ways can characters be mapped incorrectly in other languages or in what ways does this system not accommodate other languages? The risky part of this system is that there is a definite capacity that cannot be crossed so how do this capacity and limitation affect new languages that others might want to digitize? These are questions on my mind and I am curious about how things will change over time as language and needs adapt.
+      </p>
+      <h5>Glitch Art</h5>
+      <p>
+      Character encoding encompasses more than the “written” text or what we read on screens. Character encoding also informs other mediums and formats such as images, sound, and video. All of these formats can have their encoding manipulated in order to create glitches.
+    </p>
+    <p>
+      Every file on our computer can be converted to plain text readable material. This is a form of data bending, which essentially is the act of opening a file in a program that was designed to open a different kind of file. Data bending is something I would personally like to experiment with more and see the potentiality of effects that can be created on all kinds of file formats.
+    </p>
+    <p>
+      One way to do this is to open up a file in text edit or a hex editor like hex fiend. Doing so allows you to manipulate its content at a code level.
+    </p>
+    <p>
+      Right before the class, I made a little graphic image to advertise a bi-weekly radio show I had so I input that into hex fiend and manipulated by deleting/erasing in three different areas to see various types of results. We were instructed to not alter the very beginnings or very ends of the text files, as they might have key information that lets our computer know what kind of file we are working with. The results of this process were pretty awesome! In the past, as a kid, I was interested in glitch art but had relied on using a different phone or computer apps to accomplish the results from pre-set “glitch filters” that were created and now I finally know how to create my own effects.
+    </p>
+          <h5>Initial Image</h5>
+          <img src="images/2020-the-fuzzy-edges-of-character-encoding/2.jpg" alt="graphic for No Woo Radio Show">
+          <h5>First Glitch</h5>
+          <img src="images/2020-the-fuzzy-edges-of-character-encoding/3.jpg" alt="first glitch of graphic for No woo woo radio show">
+          <h5>Second Glitch</h5>
+          <img src="images/2020-the-fuzzy-edges-of-character-encoding/4.jpg" alt="second glitch of graphic for No woo woo radio show">
+          <h5>Third Glitch</h5>
+          <img src="images/2020-the-fuzzy-edges-of-character-encoding/5.jpg" alt="third glitch of graphic for No woo woo radio show">
+          <p>
+          At the moment, I am manipulating things quite randomly and so there is also a huge element of surprise every time I save the file and open to preview it. Sometimes you manipulate the file too much and it becomes extremely corrupted and unable to open.
+        </p>
+        <p>
+          This class in many ways feels like exploring the DNA of a complex machine that I use every day. Understanding the inner-workings not only makes me appreciate its communicative affordances but also helps me have more control over how to use these features to create interesting effects outside of pre-designed programs.
+        </p>
+          <small>
+          Written by <a href="https://www.cyberwitch666.com" target="_blank">Cy X</a>
+          </small>
+      </div>
+
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script>
+        const arenaDrawer = document.getElementById("arena-drawer");
+        const arenaDrawerButton = document.getElementById("arena-drawer-button");
+        const axiosArena = axios.create({
+          baseURL: "https://api.are.na/v2/",
+        });
+
+        arenaDrawerButton.addEventListener('click', arenaDrawerOpen);
+
+        function arenaDrawerOpen() {
+          window.scrollTo(0, 0);
+          arenaDrawer.classList.toggle('open');
+          arenaDrawerButton.classList.toggle('open');
+        }
+
+        let loading = document.createElement("div");
+        loading.className = "loading";
+        loading.innerHTML = 'loading...';
+        arenaDrawer.appendChild(loading);
+
+        axiosArena.defaults.headers.Authorization = 'Bearer ---' ;
+        axiosArena.get("channels/the-fuzzy-edges-of-character-encoding-everest-pipkin?per=100").then(response => {
+          console.log(response);
+          if (response.data && response.data.contents.length > 1) {
+            arenaDrawer.removeChild(loading);
+            createDrawer(response.data.contents);
+          } else {
+
+          }
+        });
+
+        function createDrawer(drawerData) {
+          for (let i=0; i<drawerData.length; i++) {
+            //create block
+            let block = document.createElement("div");
+            block.className = "block";
+
+            if (drawerData[i].source && drawerData[i].class !== "Channel") {
+              block = document.createElement("a");
+              block.className = "block";
+              block.href = drawerData[i].source.url;
+              block.target = "_blank";
+            }
+
+            //create image
+            if (drawerData[i].image && drawerData[i].image) {
+              const image = document.createElement("img");
+              image.className = "image";
+              image.src = drawerData[i].image.square.url;
+              block.appendChild(image);
+            }
+            //create title
+            if (drawerData[i].title) {
+              const title = document.createElement("div");
+              title.className = "title";
+              title.innerHTML = drawerData[i].title;
+              block.appendChild(title);
+            }
+
+            //create text
+            if (drawerData[i].class === "Text") {
+              const text = document.createElement("div");
+              text.className = "text";
+              text.innerHTML = drawerData[i].content;
+              block.appendChild(text);
+            }
+
+            arenaDrawer.appendChild(block);
+          }
+        }
+      </script>
+  </body>
+</html>
