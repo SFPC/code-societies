@@ -251,7 +251,12 @@ a.channel {
     width: 40%;
   }
   #arena-drawer-button {
-    font-size: 0.8675em;
+    font-size: 0.9675em;
+  }
+  .link-to-arena-channel {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block !important;
   }
   h3 {
     font-size: 4.75em;
