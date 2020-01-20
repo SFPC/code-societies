@@ -7,13 +7,13 @@ img {
 
 small {
   display: block;
-  margin: 1.5em 0 1.5em 0;
-  margin-left: 2em;
-  font-size: .9675em;
+  margin: 0;
+  text-align: right;
+  font-size: 1.125em;
 }
 
 p {
-  font-size: 1.325em;
+  font-size: 1.225em;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   line-height: 1.5em;
   max-width: 670px;
@@ -21,7 +21,7 @@ p {
 }
 
 h3 {
-  font-size: 3.45em;
+  font-size: 2.85em;
   margin: 0.5em 0;
   max-width: 980px;
 }
@@ -195,6 +195,7 @@ a.channel {
   left: 0;
   padding: 10px;
   right: 0;
+  z-index: 20;
 }
 
 #arena-drawer {
@@ -218,8 +219,10 @@ a.channel {
   display: none;
 }
 
-#link-to-arena-channel {
-  margin-bottom: 20px;
+.link-to-arena-channel {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  display: block !important;
 }
 
 #arena-drawer .block {
@@ -229,7 +232,11 @@ a.channel {
   flex-direction: row;
   width: 100%;
   margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-weight: normal;
+  line-height: 1.35em;
   border-bottom: 5px solid black !important;
+  text-align: left;
 }
 
 #arena-drawer .block img {
@@ -249,12 +256,15 @@ a.channel {
   h3 {
     font-size: 4.75em;
   }
-
   .two-images {
     display: flex;
     align-items: center;
   }
   .two-images img {
     width: 45%;
+  }
+  small {
+    margin: 1.5em 0 1.5em 2em;
+    font-size: .9675em;
   }
 }
