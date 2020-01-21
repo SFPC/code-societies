@@ -98,7 +98,7 @@ p a {
 
 a.home-button {
   position: sticky;
-  top: 65px;
+  top: 70px;
   border: none !important;
 }
 
@@ -271,5 +271,8 @@ a.channel {
   small {
     margin: 1.5em 0 1.5em 2em;
     font-size: .9675em;
+  }
+  a.home-button {
+    top: 65px;
   }
 }
