@@ -98,7 +98,7 @@ p a {
 
 a.home-button {
   position: sticky;
-  top: 70px;
+  top: 60px;
   border: none !important;
 }
 
@@ -182,7 +182,7 @@ a.channel {
 }
 
 #arena-drawer-button {
-  font-size: 0.8675em;
+  font-size: 0.75em;
   text-transform: uppercase;
   font-family: monospace;
   text-align: center;
@@ -193,7 +193,7 @@ a.channel {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 10px;
+  padding: 7px 0px;
   right: 0;
   z-index: 20;
 }
