@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@sfpc" />
+    <meta name="twitter:creator" content="@sfpc" />
+    <!-- Fill out meta tags below for Twitter -->
+    <meta property="og:url" content="https://sfpc.io/code-societies-website/blog/..." />
+    <meta property="og:title" content="Oral History ~ Code Societies 2020" />
+    <meta property="og:description" content="Oral History ~ Code Societies 2020" />
+    <meta property="og:image" content="https://sfpc.io/code-societies/..." />
+    <meta property="twitter:image:alt" content="..." />
+    <link rel="stylesheet" type="text/css" href="../base.css">
+    <link rel="stylesheet" type="text/css" href="oral-history.css">
+    <style>
+      /* background color */
+      body {background-color: darkgoldenrod; color: black;}
+      /* hover color for links */
+      a:hover { color: black; }
+    </style>
+  </head>
+
+  <body>
+    <div class="oral-history">
+      <h1>Oral History</h1>
+
+      <div class="track-wrapper">
+        <h3>audio track one</h3>
+        <div class="audio-player" id="audio-player-1">
+          <audio class="audio" id="audio-1">
+            <source src="pauline-ol-2.mp3" type="audio/mp3">
+          </audio>
+          <div class="player-controls">
+            <button class="button" id="playAudio-1"></button>
+            <div id="scrubber-wrapper">
+              <div class="scrubber" id="scrubber-1">
+                <div class="percentage" id="percentage-1"></div>
+              </div>
+            </div>
+            <p><small class="current-time" id="currentTime-1">00:00</small></p>
+          </div>
+        </div>
+        <p>this is the first oral history in this series. its an hour long. making this for code societies. this is the first oral history in this series. its an hour long. making this for code societies. </p>
+      </div>
+
+      <div class="track-wrapper">
+        <h3>audio track two</h3>
+        <div class="audio-player" id="audio-player-2">
+          <audio class="audio" id="audio-2">
+            <source src="pauline-ol-1.mp3" type="audio/mp3">
+          </audio>
+          <div class="player-controls">
+            <button class="button" id="playAudio-2"></button>
+            <div id="scrubber-wrapper">
+              <div class="scrubber" id="scrubber-2">
+                <div class="percentage" id="percentage-2"></div>
+              </div>
+            </div>
+            <p><small class="current-time" id="currentTime-2">00:00</small></p>
+          </div>
+        </div>
+        <p>this is the first oral history in this series. its an hour long. making this for code societies. this is the first oral history in this series. its an hour long. making this for code societies.</p>
+      </div>
+
+    </div>
+
+    <script src="audio.js"></script>
+    <script>
+      oralHistory('audio-player-1', 'audio-1', 'playAudio-1', 'percentage-1', 'scrubber-1', 'currentTime-1');
+
+      oralHistory('audio-player-2', 'audio-2', 'playAudio-2', 'percentage-2', 'scrubber-2', 'currentTime-2')
+    </script>
+  </body>
+</html>
