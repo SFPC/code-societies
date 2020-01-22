@@ -42,21 +42,19 @@
   position: absolute;
   top: -6px;
   left: -6px;
-
 }
-.player-controls {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .button.pause:after {
   content: '■';
   font-size: 2.2em;
   position: absolute;
   top: -6px;
   left: -6px;
+}
+.player-controls {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #scrubber-wrapper {
   position: relative;
@@ -68,10 +66,9 @@
   position:relative;
   width: 100%;
   height: 100%;
-  background-color: #e3e3e3;
+  background-color: #ccc;
   border: 1px solid black;
 }
-
 .percentage {
   position: absolute;
   left: 0;
