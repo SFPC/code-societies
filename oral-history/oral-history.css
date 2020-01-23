@@ -25,7 +25,8 @@
   margin-bottom: 12px;
 }
 .audio-player.active {
-  box-shadow: 6px 6px 6px 6px rgba(0,0,0,.5);
+  background-color: grey;
+  /* box-shadow: 6px 6px 6px 6px rgba(0,0,0,.5); */
   transform: translate(1px, 1px);
 }
 .button {

@@ -16,7 +16,8 @@
     <link rel="stylesheet" type="text/css" href="oral-history.css">
     <style>
       /* background color */
-      body {background-color: darkgoldenrod; color: black;}
+      body {background-color: purple
+      ; color: black;}
       /* hover color for links */
       a:hover { color: black; }
     </style>
@@ -27,10 +28,10 @@
       <h1>Oral History</h1>
 
       <div class="track-wrapper">
-        <h3>audio track one</h3>
+        <h3>Char Jeré and Lina Chang</h3>
         <div class="audio-player" id="audio-player-1">
           <audio class="audio" id="audio-1">
-            <source src="pauline-ol-2.mp3" type="audio/mp3">
+            <source src="audio/allison_parrish_markov_chain.mp3" type="audio/mp3">
           </audio>
           <div class="player-controls">
             <button class="button" id="playAudio-1"></button>
@@ -42,14 +43,16 @@
             <p><small class="current-time" id="currentTime-1">00:00</small></p>
           </div>
         </div>
-        <p>this is the first oral history in this series. its an hour long. making this for code societies. this is the first oral history in this series. its an hour long. making this for code societies. </p>
+        <p>Char Jeré and Lina Chang respond to an Introduction to Code Societies taught by Melanie Hoff, neta bomani, emma rae norton and Taeyoon Choi.</p>
+        <p id ="keywords"> List of keywords </p>
+
       </div>
 
       <div class="track-wrapper">
-        <h3>audio track two</h3>
+        <h3>Simone Browne and Tsige Tafesse</h3>
         <div class="audio-player" id="audio-player-2">
           <audio class="audio" id="audio-2">
-            <source src="pauline-ol-1.mp3" type="audio/mp3">
+            <source src="audio/allison_parrish_markov_chain.mp3" type="audio/mp3">
           </audio>
           <div class="player-controls">
             <button class="button" id="playAudio-2"></button>
@@ -61,16 +64,38 @@
             <p><small class="current-time" id="currentTime-2">00:00</small></p>
           </div>
         </div>
-        <p>this is the first oral history in this series. its an hour long. making this for code societies. this is the first oral history in this series. its an hour long. making this for code societies.</p>
-      </div>
-
+        <p>Simone Browne and Tsige Tafesse respond to Surveillance Studies taught by American Artist and Simone Browne.</p>
+        <p id ="keywords"> Surveillance, technology, supremacy, oral history, trust, memory, Ethiopia, family </p>
     </div>
+
+    <div class="track-wrapper">
+      <h3>Markov chain poetry reading from Computational Exploration of Magical and Divinatory Language (Part 1 & 2) by Allison Parrish</h3>
+      <div class="audio-player" id="audio-player-3">
+        <audio class="audio" id="audio-3">
+          <source src="audio/allison_parrish_markov_chain.mp3" type="audio/mp3">
+        </audio>
+        <div class="player-controls">
+          <button class="button" id="playAudio-3"></button>
+          <div id="scrubber-wrapper">
+            <div class="scrubber" id="scrubber-3">
+              <div class="percentage" id="percentage-2"></div>
+            </div>
+          </div>
+          <p><small class="current-time" id="currentTime-3">00:00</small></p>
+        </div>
+      </div>
+      <p> <b>Narrators:</b> Allison Parrish, Adina Glickstein, Alonso Castro, Amber Officer-Narvasa, Andreas Jonathan, César Neri, Char Jeré, Char Stiles, Christina Entcheva, Cy X, Eliseo Rivera, Elizabeth Perez, emma rae norton, Holly Meadows-Smith, Ladipo Famodu, Lina Chang, Mehrnaz Rohbakhsh, Melanie Hoff, neta bomani, Shea Fitzpatrick, Sophie Kovel, Tina Nguyen</p>
+      <p> Data set by Code Societies students, collaboration with Python code written by Allison Parrish, transcription by neta bomani</p>
+      <p id ="keywords"> Surveillance, technology, supremacy, oral history, trust, memory, Ethiopia, family </p>
+  </div>
 
     <script src="audio.js"></script>
     <script>
       oralHistory('audio-player-1', 'audio-1', 'playAudio-1', 'percentage-1', 'scrubber-1', 'currentTime-1');
 
       oralHistory('audio-player-2', 'audio-2', 'playAudio-2', 'percentage-2', 'scrubber-2', 'currentTime-2')
+
+      oralHistory('audio-player-3', 'audio-3', 'playAudio-3', 'percentage-3', 'scrubber-3', 'currentTime-3')
     </script>
   </body>
 </html>
