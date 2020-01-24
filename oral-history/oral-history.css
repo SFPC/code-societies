@@ -55,9 +55,8 @@
   padding: 0;
 }
 .svg {
-  fill: #000;
-  width: 20px;
-  height: 20px;
+  height: 30px;
+  width: 30px;
 }
 .svg.pause { display: none;}
 .track-wrapper.is-playing .svg.pause {display: block;}
