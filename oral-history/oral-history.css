@@ -60,8 +60,8 @@
   height: 20px;
 }
 .svg.pause { display: none;}
-.track-wrapper.active .svg.pause {display: block;}
-.track-wrapper.active .svg.play {display: none;}
+.track-wrapper.is-playing .svg.pause {display: block;}
+.track-wrapper.is-playing .svg.play {display: none;}
 .player-controls {
   position: relative;
   display: flex;

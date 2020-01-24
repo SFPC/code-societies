@@ -30,9 +30,11 @@ function oralHistory(audioPlayerId, audioId, playAudioId, percentageId, scrubber
       audioPlayer.scrollIntoView();
       // audioPlayer.classList.toggle('active');
       audioPlayer.classList.remove('active');
+      audioPlayer.classList.remove('is-playing');
     } else {
       media.play();
       audioPlayer.classList.add('active');
+      audioPlayer.classList.add('is-playing');
       playAudio.classList.add('pause');
     }
   }
