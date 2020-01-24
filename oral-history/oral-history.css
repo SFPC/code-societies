@@ -122,9 +122,14 @@ ul {
 @media only screen and (min-width: 768px) {
   .all-tracks {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
+  }
+  .track-wrapper {
+    border: 1px solid black;
+    width: 33.33%;
   }
   .voice {
     display: flex;
