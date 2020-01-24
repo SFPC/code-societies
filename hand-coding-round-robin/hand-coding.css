@@ -1,0 +1,15 @@
+iframe {
+  height: 85vh !important;
+}
+
+h1.handcoding {
+  font-size: 2.85em;
+  margin: 0.5em 0;
+  max-width: 980px;
+}
+
+h2.handcoding {
+  font-size: 2.125em;
+  margin-bottom: 1.5em;
+  max-width: 980px;
+}
