@@ -117,14 +117,37 @@ ul {
   padding-left: 20px;
 }
 
+.keyword {
+  padding-top: .2em;
+  padding-bottom: 10px;
+  font-family: monospace, "Courier";
+  font-weight: bold;
+}
 
+ul {
+  display: block;
+  list-style-type: none;
+  margin-bottom: 1em;
+  padding-left: 0px;
+  padding-bottom: 7px;
+  line-height: 17px;
+}
+ul li {
+  margin-bottom: 12px;
+  line-height: 1.25em;
+}
 /* DESKTOP ONLY STYLES!! */
 @media only screen and (min-width: 768px) {
   .all-tracks {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
+  }
+  .track-wrapper {
+    border: 1px solid black;
+    width: 33.33%;
   }
   .voice {
     display: flex;
