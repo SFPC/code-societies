@@ -9,23 +9,30 @@ function oralHistory(audioPlayerId, audioId, playAudioId, percentageId, scrubber
   const activeUrl = window.location.hash;
   hash = activeUrl.replace('#', '');
   let activeAudio;
+
   if (hash) {
     activeAudio = id(`audio-player-${hash}`);
-    console.log(activeAudio);
     activeAudio.classList.add('active');
+    activeAudio.scrollIntoView();
   }
 
   function togglePlay() {
     if (window.location.hash === '') {
-      audioPlayer.classList.toggle('active');
+      console.log(audioPlayer);
+      // activeAudio.classList.toggle('active');
     }
-    window.location.hash = '';
 
     if (media.paused === false) {
       media.pause();
       playAudio.classList.remove('pause');
+      console.log('a');
+      window.location.hash = '';
+      audioPlayer.scrollIntoView();
+      // audioPlayer.classList.toggle('active');
+      audioPlayer.classList.remove('active');
     } else {
       media.play();
+      audioPlayer.classList.add('active');
       playAudio.classList.add('pause');
     }
   }

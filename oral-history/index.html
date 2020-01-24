@@ -16,8 +16,7 @@
     <link rel="stylesheet" type="text/css" href="oral-history.css">
     <style>
       /* background color */
-      body {background-color: purple
-      ; color: black;}
+      body {background-color: mediumpurple; color: black;}
       /* hover color for links */
       a:hover { color: black; }
     </style>
@@ -26,83 +25,85 @@
   <body>
     <div class="oral-history">
       <h1>Oral History</h1>
-
-      <div class="track-wrapper">
-        <h3>Char Jeré and Lina Chang</h3>
-
-        <img class="img" alt="no alt text yet sorry" src="photo/knot1.png" />
-
-        <div class="audio-player" id="audio-player-1">
-          <audio class="audio" id="audio-1">
-            <source src="audio/char_lina.mp3" type="audio/mp3">
-          </audio>
-          <div class="player-controls">
-            <button class="button" id="playAudio-1"></button>
-            <div id="scrubber-wrapper">
-              <div class="scrubber" id="scrubber-1">
-                <div class="percentage" id="percentage-1"></div>
+      <h2>description</h2>
+      <div class="all-tracks">
+        <div class="track-wrapper" id="audio-player-1">
+          <h3>Char Jeré and Lina Chang </h3>
+          <img class="img" alt="no alt text yet sorry" src="photo/knot1.png" />
+          <div class="audio-player">
+            <audio class="audio" id="audio-1">
+              <source src="audio/char_lina.mp3" type="audio/mp3">
+            </audio>
+            <div class="player-controls">
+              <button class="button" id="playAudio-1"></button>
+              <div id="scrubber-wrapper">
+                <div class="scrubber" id="scrubber-1">
+                  <div class="percentage" id="percentage-1"></div>
+                </div>
               </div>
+              <p><small class="current-time" id="currentTime-1">00:00</small></p>
             </div>
-            <p><small class="current-time" id="currentTime-1">00:00</small></p>
           </div>
+          <ul>
+            <li> Brooklyn Public Library, 10 Grand Army Plaza, Brooklyn, NY 11238 </li>
+            <li> Char Jeré and Lina Chang in conversation regarding an Introduction to Code Societies taught by Melanie Hoff, neta bomani, emma rae norton and Taeyoon Choi.</p>
+            <li class ="keyword"> Library, stuck, afro, fractlism, representation </li>
+            <li><a href="transcripts/name-of-track.html">Full Transcript</a></li>
+          </ul>
         </div>
-        <ul>
-          <li> Brooklyn Public Library, 10 Grand Army Plaza, Brooklyn, NY 11238 </li>
-          <li> Char Jeré and Lina Chang in conversation regarding an Introduction to Code Societies taught by Melanie Hoff, neta bomani, emma rae norton and Taeyoon Choi.</p>
-          <li class ="keyword"> Library, stuck, afro, fractlism, representation </li>
-        </ul>
-      </div>
 
-      <div class="track-wrapper">
-        <h3>Simone Browne and Tsige Tafesse</h3>
-        <img class="img" alt="no alt text yet sorry" src="photo/knot2.png" />
-        <div class="audio-player" id="audio-player-2">
-          <audio class="audio" id="audio-2">
-            <source src="audio/simone_tsige.mp3" type="audio/mp3">
-          </audio>
-          <div class="player-controls">
-            <button class="button" id="playAudio-2"></button>
-            <div id="scrubber-wrapper">
-              <div class="scrubber" id="scrubber-2">
-                <div class="percentage" id="percentage-2"></div>
+        <div class="track-wrapper" id="audio-player-2">
+          <h3>Simone Browne and Tsige Tafesse</h3>
+          <img class="img" alt="no alt text yet sorry" src="photo/knot2.png" />
+          <div class="audio-player" >
+            <audio class="audio" id="audio-2">
+              <source src="audio/simone_tsige.mp3" type="audio/mp3">
+            </audio>
+            <div class="player-controls">
+              <button class="button" id="playAudio-2"></button>
+              <div id="scrubber-wrapper">
+                <div class="scrubber" id="scrubber-2">
+                  <div class="percentage" id="percentage-2"></div>
+                </div>
               </div>
-            </div>
-            <p><small class="current-time" id="currentTime-2">00:00</small></p>
-          </div>
-        </div>
-        <ul>
-          <li> Brooklyn Public Library, 10 Grand Army Plaza, Brooklyn, NY 11238 </li>
-          <li> Simone Browne and Tsige Tafesse respond to Surveillance Studies taught by American Artist and Simone Browne.</p>
-          <li class ="keyword"> Surveillance, technology, supremacy, oral history, trust, memory, Ethiopia, family </li>
-        </ul>
-    </div>
-
-    <div class="track-wrapper">
-      <h3>Markov chain poetry reading from Computational Exploration of Magical and Divinatory Language by Allison Parrish</h3>
-
-      <img class="img" alt="no alt text yet sorry" src="photo/knot1.png" />
-
-      <div class="audio-player" id="audio-player-3">
-        <audio class="audio" id="audio-3">
-          <source src="audio/allison_parrish_markov_chain.mp3" type="audio/mp3">
-        </audio>
-        <div class="player-controls">
-          <button class="button" id="playAudio-3"></button>
-          <div id="scrubber-wrapper">
-            <div class="scrubber" id="scrubber-3">
-              <div class="percentage" id="percentage-2"></div>
+              <p><small class="current-time" id="currentTime-2">00:00</small></p>
             </div>
           </div>
-          <p><small class="current-time" id="currentTime-3">00:00</small></p>
+          <ul>
+            <li> Brooklyn Public Library, 10 Grand Army Plaza, Brooklyn, NY 11238 </li>
+            <li> Simone Browne and Tsige Tafesse respond to Surveillance Studies taught by American Artist and Simone Browne.</p>
+            <li class ="keyword">Surveillance, technology, supremacy, oral history, trust, memory, Ethiopia, family </li>
+          </ul>
         </div>
-      </div>
 
-      <ul>
-        <li> School for Poetic Computation, 155 Bank St, New York, NY 10014 </li>
-        <li> Narrators: Allison Parrish, Adina Glickstein, Alonso Castro, Amber Officer-Narvasa, Andreas Jonathan, César Neri, Char Jeré, Char Stiles, Christina Entcheva, Cy X, Eliseo Rivera, Elizabeth Perez, emma rae norton, Holly Meadows-Smith, Ladipo Famodu, Lina Chang, Mehrnaz Rohbakhsh, Melanie Hoff, neta bomani, Shea Fitzpatrick, Sophie Kovel, Tina Nguyen</p>
-        <li> Data set by Code Societies students, collaboration with Python code written by Allison Parrish</li>
-      </ul>
+        <div class="track-wrapper" id="audio-player-3">
+          <h3>Markov chain poetry reading from Computational Exploration of Magical and Divinatory Language by Allison Parrish</h3>
+
+          <img class="img" alt="no alt text yet sorry" src="photo/knot1.png" />
+
+          <div class="audio-player">
+            <audio class="audio" id="audio-3">
+              <source src="audio/allison_parrish_markov_chain.mp3" type="audio/mp3">
+            </audio>
+            <div class="player-controls">
+              <button class="button" id="playAudio-3"></button>
+              <div id="scrubber-wrapper">
+                <div class="scrubber" id="scrubber-3">
+                  <div class="percentage" id="percentage-3"></div>
+                </div>
+              </div>
+              <p><small class="current-time" id="currentTime-3">00:00</small></p>
+            </div>
+          </div>
+
+          <ul>
+            <li> School for Poetic Computation, 155 Bank St, New York, NY 10014 </li>
+            <li> Narrators: Allison Parrish, Adina Glickstein, Alonso Castro, Amber Officer-Narvasa, Andreas Jonathan, César Neri, Char Jeré, Char Stiles, Christina Entcheva, Cy X, Eliseo Rivera, Elizabeth Perez, emma rae norton, Holly Meadows-Smith, Ladipo Famodu, Lina Chang, Mehrnaz Rohbakhsh, Melanie Hoff, neta bomani, Shea Fitzpatrick, Sophie Kovel, Tina Nguyen</p>
+            <li> Data set by Code Societies students, collaboration with Python code written by Allison Parrish</li>
+          </ul>
+        </div>
   </div>
+</div>
 
     <script src="audio.js"></script>
     <script>
