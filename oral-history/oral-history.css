@@ -54,20 +54,14 @@
   background-color: transparent;
   padding: 0;
 }
-.button:after {
-  content: '▶';
-  font-size: 2.2em;
-  position: absolute;
-  top: -6px;
-  left: -6px;
+.svg {
+  fill: #000;
+  width: 20px;
+  height: 20px;
 }
-.button.pause:after {
-  content: '■';
-  font-size: 2.2em;
-  position: absolute;
-  top: -6px;
-  left: -6px;
-}
+.svg.pause { display: none;}
+.track-wrapper.active .svg.pause {display: block;}
+.track-wrapper.active .svg.play {display: none;}
 .player-controls {
   position: relative;
   display: flex;
