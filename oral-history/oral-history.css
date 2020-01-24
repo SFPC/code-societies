@@ -80,3 +80,28 @@
 p small {
   font-size: .675em;
 }
+
+h4 {
+  text-decoration: underline;
+  /* font-size: .9725em; */
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
+.keyword {
+  padding-top: .2em;
+  font-family: monospace, "Courier";
+  font-weight: bold;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  padding-left: 20px;
+}
