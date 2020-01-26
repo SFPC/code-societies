@@ -1,10 +1,11 @@
-function oralHistory(audioPlayerId, audioId, playAudioId, percentageId, scrubberId, currentTimeId) {
+function oralHistory(audioPlayerId, audioId, playAudioId, percentageId, scrubberId, currentTimeId, loading) {
   const media = id(audioId);
   const audioPlayer = id(audioPlayerId);
   const playAudio = id(playAudioId);
   const percentage = id(percentageId);
   const scrubber = id(scrubberId);
   const currentTime = id(currentTimeId);
+  const loading = id(loading)
   let hash;
   const activeUrl = window.location.hash;
   hash = activeUrl.replace('#', '');
@@ -65,6 +66,9 @@ function oralHistory(audioPlayerId, audioId, playAudioId, percentageId, scrubber
     currentTime.innerHTML = currTime;
     scrubber.addEventListener('click', seek);
     console.log(media.currentTime);
+    if (media.currentTime > 0) {
+      loading.style.opacity = '0';
+    }
     media.onended = () => {
       playAudio.classList.remove('pause');
       percentage.style.width = 0;
