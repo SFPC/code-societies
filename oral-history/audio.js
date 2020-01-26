@@ -33,6 +33,7 @@ function oralHistory(audioPlayerId, audioId, playAudioId, percentageId, scrubber
       audioPlayer.classList.remove('is-playing');
     } else {
       media.play();
+
       audioPlayer.classList.add('active');
       audioPlayer.classList.add('is-playing');
       playAudio.classList.add('pause');
@@ -63,7 +64,7 @@ function oralHistory(audioPlayerId, audioId, playAudioId, percentageId, scrubber
     const currTime = whatIsCurrentTime(media.currentTime);
     currentTime.innerHTML = currTime;
     scrubber.addEventListener('click', seek);
-
+    console.log(media.currentTime);
     media.onended = () => {
       playAudio.classList.remove('pause');
       percentage.style.width = 0;
