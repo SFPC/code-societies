@@ -1,11 +1,11 @@
-function oralHistory(audioPlayerId, audioId, playAudioId, percentageId, scrubberId, currentTimeId, loading) {
+function oralHistory(audioPlayerId, audioId, playAudioId, percentageId, scrubberId, currentTimeId, load) {
   const media = id(audioId);
   const audioPlayer = id(audioPlayerId);
   const playAudio = id(playAudioId);
   const percentage = id(percentageId);
   const scrubber = id(scrubberId);
   const currentTime = id(currentTimeId);
-  const loading = id(loading)
+  const loading = id(load)
   let hash;
   const activeUrl = window.location.hash;
   hash = activeUrl.replace('#', '');
