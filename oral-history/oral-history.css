@@ -148,9 +148,12 @@ ul li {
     width: 33.33%;
   }
 
-  /* .oral-history.transcript {
-
-    } */
+  .oral-history.transcript h1,
+  .oral-history.transcript h2,
+  .oral-history.transcript h3,
+  .oral-history.transcript p  {
+    margin-bottom:15px;
+  }
 
   .interviewer {
     display: flex;
@@ -171,10 +174,12 @@ ul li {
     font-weight: normal;
     text-transform: uppercase;
     text-decoration: underline;
+    line-height: 1.5em;
   }
   .narrator p {
     align-content: top;
     width: 75%;
+    line-height: 1.25em;
   }
   .audio-player {
     width: 100%;
