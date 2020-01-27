@@ -13,7 +13,6 @@
   max-width: 980px;
 }
 
-
 .oral-history p {
   color: black !important;
 }
@@ -148,15 +147,34 @@ ul li {
     border: 1px solid black;
     width: 33.33%;
   }
-  .voice {
+
+  /* .oral-history.transcript {
+
+    } */
+
+  .interviewer {
     display: flex;
     align-items: flex-start;
   }
-  .voice h3 {
-    width: 30%;
+
+  .interviewer h3 {
+    width: 50%;
   }
-  .voice p {
-    width: 70%;
+
+
+  .narrator {
+    display: flex;
+    align-items: flex-start;
+  }
+  .narrator h3 {
+    width: 10%;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  .narrator p {
+    align-content: top;
+    width: 75%;
   }
   .audio-player {
     width: 100%;
@@ -170,4 +188,6 @@ ul li {
   .oral-history h1 {
     font-size: 3.75em;
   }
+
+
 }
