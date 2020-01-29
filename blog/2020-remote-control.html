@@ -24,6 +24,13 @@
 
   <body>
       <div class="holding-it-all-together">
+        <div id="arena-drawer-button">
+          <span id="open">Are.na / Code Societies / Remote Control – FlucT</span>
+          <span id="close">x</span>
+        </div>
+        <div id="arena-drawer">
+          <a class="link-to-arena-channel" href="https://www.are.na/code-societies/remote-control-fluct" target="_blank">Are.na / Code Societies / Remote Control – FlucT</a>
+        </div>
           <!-- This link should always be at the top. -->
           <a class="home-button" href="/code-societies/blog">&#8604; blog</a>
           <!-- The next three tags should be the H3 tag, the H4 tag, and an IMG tag. -->
@@ -104,5 +111,10 @@
             <img src="images/2020-images-remote-control/3.jpg" alt="FlucT performing everything makes me happy">
 
       </div>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="arenadrawer.js"></script>
+      <script>
+        createArenaDrawer('remote-control-fluct');
+      </script>
   </body>
 </html>
